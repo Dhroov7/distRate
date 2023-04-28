@@ -41,11 +41,11 @@ The `DistRate` constructor takes an options object with the following properties
 
 - `tokens` (required): The number of tokens in the token bucket.
 - `duration` (required): The duration in seconds for which the tokens are replenished.
-- `redisClient` (required): An instance of the Redis client to use for distributed locking and storage.
+- `redisClient` (required): An instance of the ioredis client to use for distributed locking and storage.
 - `lockRetryCount` (optional): The maximum number of times to retry acquiring the Redis lock when executing the rate limiter (default: 5).
-- `maxBackoffDelay` (optional): The maximum delay in milliseconds between retries when acquiring the Redis lock (default: 10000).
-- `initialBackoffDelay` (optional): The initial delay in milliseconds between retries when acquiring the Redis lock (default: 100).
-- `backoffMultiplier` (optional): The factor by which to increase the delay between retries when acquiring the Redis lock (default: 2).
+- `maxBackoffDelay` (optional): The maximum delay in milliseconds between retries when acquiring the Redis lock (default: 5000).
+- `initialBackoffDelay` (optional): The initial delay in milliseconds between retries when acquiring the Redis lock (default: 50).
+- `backoffMultiplier` (optional): The factor by which to increase the delay between retries when acquiring the Redis lock (default: 1.5).
 - `redisKeyTimeout` (optional): The timeout in milliseconds for the Redis key lock (default: 5000).
 - `enableAnalytics` (optional): A boolean indicating whether to enable analytics logging (default: false).
 
