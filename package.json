@@ -1,5 +1,5 @@
 {
-  "name": "distRate",
+  "name": "dist-rate",
   "version": "1.0.0",
   "description": "Rate limiter library helps in limiting the number of requests a user can make within a specified time frame",
   "main": "src/index.js",
@@ -13,6 +13,9 @@
     "distributed systems",
     "typescript"
   ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "scripts": {
     "build-dev": "rm -rf ./dist && tsc -w"
   },
