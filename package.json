@@ -20,7 +20,7 @@
     "name": "Dhroov Gupta",
     "email": "dhroovgupta7@gmail.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "ioredis": "4.28.5",
     "ioredis-lock": "4.0.0",
